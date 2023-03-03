@@ -1,0 +1,229 @@
+// LOADING ANIMATION BOOTSTRAP 5
+/*#spinner {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+// LOADING ANIMATION LOGO
+@keyframes blink {
+    0% { opacity: 1; } /* İlk aşamada logo tamamen görünür */
+    50% { opacity: 0.4; } /* Orta aşamada logo yarı saydam hale gelir */
+    100% { opacity: 1; } /* Son aşamada logo tekrar tamamen görünür */
+} 
+#logo {
+    animation: blink 0.8s ease-in-out infinite; /* blink animasyonunu 1 saniyede bir tekrarla */
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+  
+
+// NAVBAR
+.navbar {
+    .nav-item.active {
+        font-weight: bold;
+        border-bottom: 3px solid $warning;
+    }
+    
+    .nav-link {
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-left: 0.7rem !important;
+        padding-right: 0.7rem !important;
+    }
+}
+
+// HOME SLIDER
+.carousel-item {
+    height: 750px;
+
+    .carousel-caption {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 576px){
+        .carousel-caption {
+            a {
+                font-size: 15px;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+// HOME ICONS
+#home-icons {
+   i {font-size: 2.5rem;} 
+}
+
+// SLIDER OVERLAY
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+}
+
+// HOME HEADING
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 54px;
+    text-align: center;
+    color: $white; 
+}
+
+// VIDEO LIGHTBOX POPUP
+#video {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/media.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+    text-align: center;
+    color: $white;
+
+    .col {
+        text-align: center;
+        padding: 45px 0;
+        a {
+            color: $white;
+            i {
+                font-size: 2rem;
+            }
+        }
+    }  
+}
+
+// IMAGE GALLERY LIGHTBOX
+#image-gallery {
+     .row .col-md-4 img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+// ABOUT PAGE
+//ABOUT HEADING
+#about-heading {
+    position: relative;
+    min-height: 400px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    text-align: center;
+    color: $white;
+
+    .container .row div {
+        min-height: 300px;
+    }
+}
+
+//COURSES PAGE
+//COURSE HEADING
+#course-heading {
+    position: relative;
+    min-height: 400px;
+    background-image: url('../img/bg3.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    text-align: center;
+    color: $white;
+
+    .container .row div {
+        min-height: 300px;
+    }
+}
+
+// CONTENT
+#content {
+    .course-thumb {
+        position: relative;
+
+        .course-meta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba($color: #000000, $alpha: 0.6);
+            padding: 4px 20px;
+            border-radius: 0 4px 0 0;
+            color: $white;
+            font-size: 0.8rem;
+        }
+    }
+
+    #rating {
+        span {
+            color: $warning;
+        }
+    }
+}
+
+// BLOG PAGE
+// BLOG HEADING
+#blog-heading {
+    position: relative;
+    min-height: 400px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    text-align: center;
+    color: $white;
+
+    .container .row div {
+        min-height: 300px;
+    }
+}
+// BLOG CONTENT
+#blog-content {
+    .date {
+        background: #1f3345;
+        color: white;
+        text-align: center;
+        padding: 5px 15px;
+        border-radius: 10px;
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.breadcrumb {
+    li:first-child a {
+        color: $warning;
+        text-decoration: none;
+    }
+    .hover-effect:hover {
+        opacity: 0.4;
+    }
+    li:last-child {
+        color: $white;
+    }
+}

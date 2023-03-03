@@ -1,0 +1,25 @@
+{
+  "name": "bs-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style compressed",
+    "build:sass": "node-sass -r --output-style compressed scss/main.scss -o css",
+    "watch:sass": "npm run build:sass && npm run build:sass -- -w",
+    "css": "node-sass scss/main.scss -o css",
+    "css:watch": "npm run css && node-sass scss/main.scss -wo css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "bs5-lightbox": "^1.8.3",
+    "node-sass": "^8.0.0",
+    "popper.js": "^1.16.1",
+    "scss-tokenizer": "^0.4.3"
+  }
+}
